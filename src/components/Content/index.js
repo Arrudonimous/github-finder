@@ -3,12 +3,14 @@ import { useContext, useEffect, useState } from 'react';
 import { UserContext } from '../../contexts/UserContext';
 import { Container, ContentContainer, Info } from './styles';
 import Footer from '../Footer';
+import SkeletonComponent from '../Skeleton';
 
 export default function Content() {
   const [info, setInfo] = useState();
   const [followers, setFollowers] = useState();
   const [following, setFollowing] = useState();
   const [repos, setRepos] = useState();
+  const [loading, setLoading] = useState(true);
   const context = useContext(UserContext);
   const url = `https://api.github.com/users/${context.username}`;
   const followersUrl = `https://api.github.com/users/${context.username}/followers`;
@@ -25,22 +27,29 @@ export default function Content() {
       setFollowing(followingData);
       setRepos(reposData);
       setInfo(data);
+      setLoading(false);
     })();
   }, [context.username]);
 
-  if (info) {
-    return (
-      <Container>
-        <ContentContainer>
-          <img src={info.avatar_url} alt="foto" />
-          <Info>
-            <h1>{info.name}</h1>
-            <small>{info.login}</small>
-            <span>{info.bio || 'Não há biografia :('}</span>
-          </Info>
-        </ContentContainer>
-        <Footer repos={repos} followers={followers} following={following} />
-      </Container>
-    );
-  }
+  return (
+    <Container>
+      {loading
+        && <SkeletonComponent />}
+      {!loading
+        && (
+          <>
+            <ContentContainer>
+              <img src={info.avatar_url} alt="foto" />
+              <Info>
+                <h1>{info.name}</h1>
+                <small>{info.login}</small>
+                <span>{info.bio || 'Não há biografia :('}</span>
+              </Info>
+            </ContentContainer>
+            <Footer repos={repos} followers={followers} following={following} />
+          </>
+
+        )}
+    </Container>
+  );
 }
