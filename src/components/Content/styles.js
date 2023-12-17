@@ -9,6 +9,7 @@ export const Container = styled.div`
   padding-bottom: 24px;
   border-radius: 8px;
   flex-direction: row;
+  height: 300px;
 
 
   

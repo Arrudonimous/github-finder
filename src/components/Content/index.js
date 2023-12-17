@@ -3,7 +3,7 @@ import { useContext, useEffect, useState } from 'react';
 import { UserContext } from '../../contexts/UserContext';
 import { Container, ContentContainer, Info } from './styles';
 import Footer from '../Footer';
-import SkeletonComponent from '../Skeleton';
+import LoadingComponent from '../Loading';
 
 export default function Content() {
   const [info, setInfo] = useState();
@@ -19,6 +19,7 @@ export default function Content() {
 
   useEffect(() => {
     (async () => {
+      setLoading(true);
       const { data } = await axios.get(url);
       const { data: followersData } = await axios.get(followersUrl);
       const { data: followingData } = await axios.get(followingUrl);
@@ -34,7 +35,7 @@ export default function Content() {
   return (
     <Container>
       {loading
-        && <SkeletonComponent />}
+        && <LoadingComponent />}
       {!loading
         && (
           <>
