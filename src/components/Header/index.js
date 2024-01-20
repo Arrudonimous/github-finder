@@ -31,6 +31,11 @@ export default function Header() {
           onChange={(e) => {
             setText(e.target.value);
           }}
+          onKeyDown={(event) => {
+            if (event.key === 'Enter') {
+              handleSetUsername();
+            }
+          }}
         />
         <button type="submit" onClick={handleSetUsername}>Buscar</button>
       </SearchContainer>
