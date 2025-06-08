@@ -1,70 +1,88 @@
-# Getting Started with Create React App
+# 🔍 GitHub Finder
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+[🇧🇷 Versão em Português](#versão-em-português) | [🇺🇸 English Version](#english-version)
 
-## Available Scripts
+---
 
-In the project directory, you can run:
+## 🇧🇷 Versão em Português
 
-### `yarn start`
+Este é o **GitHub Finder**, um projeto que desenvolvi para buscar perfis públicos de usuários do GitHub de forma simples e rápida. A aplicação consome a API pública do GitHub e exibe informações como nome, bio, localização, repositórios, seguidores e mais.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+A ideia surgiu como prática para integrar consumo de API com interface responsiva e dinâmica em JavaScript.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+### 💡 Funcionalidades
 
-### `yarn test`
+- Busca por nome de usuário do GitHub
+- Exibição de dados do perfil público
+- Lista dos principais repositórios
+- Design simples e objetivo
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+### 🛠️ Tecnologias Utilizadas
 
-### `yarn build`
+- HTML5  
+- CSS3  
+- JavaScript  
+- Fetch API  
+- GitHub REST API
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+### 🚀 Como rodar localmente
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+1. Clone o repositório:
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+```bash
+git clone https://github.com/Arrudonimous/github-finder.git
+```
 
-### `yarn eject`
+2. Acesse a pasta do projeto:
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+```bash
+cd github-finder
+```
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+3. Abra o arquivo `index.html` no navegador.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+---
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+## 🇺🇸 English Version
 
-## Learn More
+This is **GitHub Finder**, a project I built to quickly search and display public GitHub user profiles. It uses the public GitHub API to fetch information such as name, bio, location, repositories, followers, and more.
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+The idea came from practicing API integration with a clean and responsive JavaScript interface.
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+### 💡 Features
 
-### Code Splitting
+- Search by GitHub username
+- Displays public profile details
+- Shows top repositories
+- Clean and functional design
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+### 🛠️ Technologies Used
 
-### Analyzing the Bundle Size
+- HTML5  
+- CSS3  
+- JavaScript  
+- Fetch API  
+- GitHub REST API
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+### 🚀 How to run locally
 
-### Making a Progressive Web App
+1. Clone the repository:
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+```bash
+git clone https://github.com/Arrudonimous/github-finder.git
+```
 
-### Advanced Configuration
+2. Navigate to the project folder:
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+```bash
+cd github-finder
+```
 
-### Deployment
+3. Open the `index.html` file in your browser.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+---
 
-### `yarn build` fails to minify
+📌 Projeto simples para prática de integração com APIs públicas.  
+📌 Simple project for practicing public API integration.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Obrigado por visitar! / Thanks for checking it out!
